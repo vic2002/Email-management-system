@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+    <link rel="stylesheet" href="../css/files.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="filters side">
+            <div style="margin-bottom: 20px;">
+                <h1>Filters</h1>
+            </div>
+            <div>
+                <label for="after">From</label>
+                <input class="filter" type="date" id="after" name="after">
+            </div>
+            <div>
+                <label for="before">Until</label>
+                <input class="filter" type="date" id="before" name="before">
+            </div>
+            <div>
+                <button id="btn" onclick="sendSearchRequest()" type="submit"><b>Filter</b></button>
+            </div>
+            <button id="back" onclick="window.history.back()">
+                <img src="../images/back.png" alt="back" width="40" height="40">
+            </button>
+        </div>
+        <div id="right">
+            <header>
+                <div class="search">
+                    <input id="search" placeholder="Search by keyword and/or email" type="text" name="search">
+                </div>
+                <div id="association"></div>
+            </header>
+            <div id="sort">
+                <form action="">
+                    <select name="sort" id="sortoption">
+                        <option value="DESC">Sort by: Date Descending</option>
+                        <option value="ASC">Sort by: Date Ascending</option>
+                        <option value="relevant" selected>Sort by: Most Relevant</option>
+                    </select>
+                    <label for="dutch">Dutch:</label>
+                    <input id="dutch" type="checkbox" name="dutch">
+                </form>
+            </div>
+            <div id="files" class="scrollable">
+                
+            </div>
+        </div>
+    </div>
+    <!-- PDF preview -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/files.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+</html>

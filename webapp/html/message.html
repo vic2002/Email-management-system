@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="../css/message.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex-container">
+            <button class="back" onclick="window.history.back()">
+                <img src="../images/back.png" alt="back" id="back-image">
+            </button>
+            <div id="association"></div>
+        </header>
+        <div>
+            <div id="subject"></div>
+            <div class="flex-container">
+                <div id="sender"></div>
+                <div id="sendAt"></div>
+            </div>
+            <div id="message" class="scrollable"></div>
+            <div id="attachments" class="flex-container">
+                <div>
+                    <button id="reply">Reply</button>
+                </div>
+            </div>
+        </div>
+        <!-- PDF preview -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+        <script src="../scripts/cookies.js"></script>
+        <script src="../scripts/message.js"></script>
+        <script src="../scripts/logout.js"></script>
+    </div>
+</body>
+
+</html>

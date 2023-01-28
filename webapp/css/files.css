@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 5vh;
+    padding: 5px 0px;
+    display: flex;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#right {
+    flex-grow: 6;
+}
+
+#files {
+    display: grid;
+    row-gap: 10px;
+}
+
+#association {
+    flex-grow: 1;
+    font-size: 25px;
+    text-align: right;
+}
+
+#search {
+    width: 95%;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #EEEEEE;
+}
+
+#btn {
+    padding: 7px;
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: #51AC34;
+    box-shadow: 2px 2px rgb(185, 185, 185);
+}
+
+#sortoption {
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #EEEEEE;
+}
+
+#search:focus, #sortoption:focus, #btn:focus, .filter:focus{
+    outline-style: none;
+}
+
+.dissapearing-background {
+    background-size: contain;
+}
+
+.timestamp {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-container {
+    padding: 5px;
+    display: flex;
+    margin: 0px 10px;
+}
+
+.filter {
+    padding: 5px;
+    margin-top: 12px;
+    padding: 3px 5px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #EEEEEE;
+}
+
+.filters {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.side {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    flex-grow: 6;
+}
+
+.file-container {
+    margin: 10px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.file {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-between;
+    box-shadow: 3px 3px rgb(185, 185, 185);
+}
+
+.file-info {
+    opacity: 0;
+}
+
+.file:hover .file-info {
+    -webkit-animation: fadeInFromNone 0.5s ease;
+    -moz-animation: fadeInFromNone 0.5s ease;
+    -o-animation: fadeInFromNone 0.5s ease;
+    animation: fadeInFromNone 0.5s ease;
+    opacity: 1;
+}
+
+.file:hover img {
+    -webkit-animation: fadeOutFromNone 0.5s ease;
+    -moz-animation: fadeOutFromNone 0.5s ease;
+    -o-animation: fadeOutFromNone 0.5s ease;
+    animation: fadeOutFromNone 0.5s ease;
+    opacity: 0.3;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+#back:hover, #btn:hover, .pointer:hover {
+    cursor: pointer;
+}
+
+#search:focus, #sort:focus, #btn:focus {
+    outline-style: none;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+    .file-container {
+        width: 250px;
+        height: 140px;
+    }
+
+    .file {
+        width: 250px;
+        height: 140px;
+        justify-self: center;
+    }
+
+    #files {
+        grid-template-columns: repeat(2, 1fr);
+        height: 90vh;
+        row-gap: 15px;
+    }
+}
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+    #files { 
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 15px;
+    }
+
+    #back {
+        left: 15px;
+        bottom: 5px;
+        position: absolute;
+        width: fit-content;
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOutFromNone {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@-moz-keyframes fadeOutFromNone {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@-o-keyframes fadeOutFromNone {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes fadeOutFromNone {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}

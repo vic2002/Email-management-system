@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/admin_page.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="association"></div>
+        </header>
+        <button class="button" onclick="window.location.href = 'create_organization.html'">Add organization</button>
+        <button class="button" onclick="window.location.href = 'create_event.html'">Add event</button>
+        <button class="button" onclick="window.location.href = 'create_user.html'">Add user</button>
+        <button class="button" onclick="window.location.href = 'create_message.html'">Add messages</button>
+        <div>
+            <button id="organizations-btn" class="sub-button green"
+                onclick="select('organizations')">Organizations</button>
+            <button id="events-btn" class="sub-button" onclick="select('events')">Events</button>
+            <button id="users-btn" class="sub-button" onclick="select('users')">Users</button>
+            <button id="messages-btn" class="sub-button" onclick="select('messages')" style="display: none;">Messages</button>
+        </div>
+        <div id="organizations">
+            <div class="search">
+                <input id="search-organization" placeholder="Search by keyword and/or email" type="text" name="search">
+                <button id="organization-btn" onclick="search()" type="submit"><b>Filter</b></button>
+            </div>
+            <table id="organizations-table" class="table table-bordered">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Website</th>
+                    <th></th>
+                </tr>
+            </table>
+            <div id="organization-pagination"></div>
+        </div>
+        <div id="events">
+            <div class="search">
+                <input id="search-event" placeholder="Search by keyword and/or email" type="text" name="search">
+                <button id="event-btn" onclick="search()" type="submit"><b>Filter</b></button>
+            </div>
+            <table id="events-table" class="table table-bordered">
+                <tr>
+                    <th>Name</th>
+                    <th>Created By</th>
+                    <th>Created At</th>
+                    <th>Starting On</th>
+                    <th>Edning On</th>
+                    <th></th>
+                </tr>
+            </table>
+            <div id="event-pagination"></div>
+        </div>
+        <div id="users">
+            <div class="search">
+                <input id="search-user" placeholder="Search by keyword and/or email" type="text" name="search">
+                <button id="user-btn" onclick="search()" type="submit"><b>Filter</b></button>
+            </div>
+            <table id="users-table" class="table table-bordered">
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Organization</th>
+                    <th></th>
+                </tr>
+            </table>
+            <div id="user-pagination"></div>
+        </div>
+        <div id="messages">
+            <div>
+                <form>
+                    <select name="sort" id="sortoption">
+                        <option value="DESC">Sort by: Date Descending</option>
+                        <option value="ASC">Sort by: Date Ascending</option>
+                        <option value="relevant" selected>Sort by: Most Relevant</option>
+                    </select>
+                    <label for="after">From</label>
+                    <input class="filter" type="date" id="after" name="after">
+                    <label for="before">Until</label>
+                    <input class="filter" type="date" id="before" name="before">
+                    <label for="dutch">Dutch: </label>
+                    <input class="filter" type="checkbox" id="dutch" name="dutch">
+                </form>
+            </div>
+            <div class="search">
+                <input id="search-message" placeholder="Search by keyword and/or email" type="text" name="search">
+                <button id="message-btn" onclick="search()" type="submit"><b>Filter</b></button>
+            </div>
+            <table id="messages-table" class="table table-bordered">
+                <tr>
+                    <th>Sender</th>
+                    <th>Sender Email</th>
+                    <th>Subject</th>
+                    <th>Number Of Attachments</th>
+                    <th>Sent To (&#8470; of people)</th>
+                    <th>Read By (&#8470; of people)</th>
+                    <th></th>
+                </tr>
+            </table>
+            <div id="message-pagination"></div>
+        </div>
+        <button id="back" onclick="window.history.back()">
+            <img src="../images/back.png" alt="back" width="40" height="40">
+        </button>
+    </div>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/admin_page.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+
+</html>

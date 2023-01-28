@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+#create-button {
+    background-color: #51AC34;
+    color: #fff;
+    padding: 2%;
+    margin: 6px;
+    border-radius: 8px;
+    width: 86%;
+    font-size: large;
+    box-shadow: 3px 3px rgb(199, 199, 199);
+}
+
+.fill-in {
+    text-align: left;
+    background: #fff;
+    padding: 2%;
+    margin: 6px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    width: 80%;
+}
+.container {
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    justify-content: center;
+    text-align: center;
+    display: -moz-box;
+    width: 500px;
+    height: 410px;
+}

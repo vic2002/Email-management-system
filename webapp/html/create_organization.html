@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create organization</title>
+    <link rel="stylesheet" href="../css/create_pages.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <div>
+            <form>
+                <input type="text" class="fill-in" id="name" name="name" placeholder="Organization name">
+                <input type="text" class="fill-in" id="email" name="email" placeholder="Organization email">
+                <input type="text" class="fill-in" id="website" name="website" placeholder="Organization website">
+                <input type="submit" id="create-button" value="Create" onclick="create(); return false;">
+            </form>
+        </div>
+    </div>
+    <!-- Sanitize user input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.8/purify.min.js"></script>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/create_organization.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+</html>

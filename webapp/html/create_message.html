@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create email</title>
+    <link rel="stylesheet" href="../css/create_message.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <div>
+            <form>
+                <input required type="text" class="fill-in" id="subject" name="subject" placeholder="Email subject">
+                <textarea required type="text" class="fill-in text-field" id="content" name="content" placeholder="Email content"></textarea>
+                <div style="width: 100%;">
+                    <select class="select" name="event" id="event"></select>
+                </div>
+                <div style="width: 100%;">
+	                <div style="width: 100%;"><select class="select" name="receiver1" id="receiver1"></select></div>
+	                <button onclick="addReceiver(); return false;" id="add-receiver-button">Add receiver</button>
+	            </div>
+	            <div style="width: 100%;">
+	                <button onclick="addAttachment(); return false;" id="add-attachment-button">Add attachment</button>
+                </div>
+                <input type="submit" id="create-button" value="Create" onclick="create(); return false;">
+            </form>
+        </div>
+    </div>
+    <!-- Sanitize user input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.8/purify.min.js"></script>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/create_message.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+</html>

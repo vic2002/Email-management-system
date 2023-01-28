@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>''</title>
+    <link rel="stylesheet" href="../css/new_details.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <div>
+            <p>Enter new organization details. These details will replace old information.</p>
+            <form>
+                <input type="text" class="fill-in" id="name" name="name">
+                <input type="text" class="fill-in" id="email" name="email">
+                <input type="text" class="fill-in" id="website" name="website">
+                <input type="submit" id="button" value="Modify!" onclick="edit(); return false;">
+            </form>
+        </div>
+    </div>
+    <!-- Sanitize user input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.8/purify.min.js"></script>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/new_details_organization.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+</html>

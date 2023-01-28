@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex-container">
+            <div id="association"></div>
+        </header>
+        <div class="flex-container">
+            <div class="side">
+                <button class="back" onclick="window.history.back()">
+                    <img src="../images/back.png" alt="back" width="40" height="40">
+                </button>
+            </div>
+            <div class="main">
+                <div class="information">
+                    <div id="org-name">Organization name</div>
+                    <div id="mail">Email</div>
+                    <a href="https://www.google.com/" id="website">To Website</a>
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="reset_password" onclick="window.location.href='../html/reset_password.html'">Reset password</button>
+                    <button class="btn" id="logout" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/profile.js"></script>
+    <script src="../scripts/logout.js"></script>
+</body>
+
+</html>

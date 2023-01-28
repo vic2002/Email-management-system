@@ -1,0 +1,25 @@
+body {
+    background-color: #eee;
+}
+
+h1 {
+    color: #51AC34;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hr {
+    width: 35%;
+    color:darkgrey;
+}
+
+.container {
+    top: 35%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#association {
+    font-size: 25px;
+    padding: 2px;
+}
+    
+.logo {
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+}
+
+.button {
+    width: 90vw;
+    height: 10vh;
+    margin: 10px 5vw;
+    text-align: center;
+    font-size: 6vh;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #51AC34;
+    box-shadow: 3px 3px rgb(185, 185, 185);
+}
+
+.button:hover {
+    background-color: #3e8129;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+
+    .button {
+        height: 10vh;
+        width: 90vw;
+        margin: 10px 5vw;
+        font-size: 6vh;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        padding-top: 3px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+
+    #buttons {
+        margin-left: 10vw;
+    }
+
+    .button {
+        height: 60px;
+        width: 170px;
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+}

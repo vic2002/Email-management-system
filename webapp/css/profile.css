@@ -1,0 +1,84 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5px 10px;
+}
+
+#association-img {
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.container {
+    height: 100vh;
+}
+
+.btn {
+    width: 50vw;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #C4C4C4;
+}
+
+.back {
+    position: fixed;
+    top: 90vh;
+    left: 10px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.flex-container {
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.side {
+    flex-grow: 1;
+}
+
+.main {
+    flex-grow: 6;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information * {
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+
+.buttons {
+    text-align: end;
+}
+
+.btn:hover{
+    background-color: #8f8f8f;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+    .btn {
+        width: 20vw;
+    }
+}
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+    
+    .btn {
+        width: 15vw;
+    }
+}

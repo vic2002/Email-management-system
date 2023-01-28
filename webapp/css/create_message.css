@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+table {
+    margin: 0 auto; /* implicitly put a table in the center */           
+}
+
+.select {
+    text-align: left;
+    background: #fff;
+    margin: 5px;
+    width: 80%;
+}
+
+#addAttachmentButton, #addReceiverButton {
+    width: 150px;
+    margin: 5px;
+}
+
+#create-button, #add-receiver-button, #add-attachment-button {
+    background-color: #51AC34;
+    color: #fff;
+    padding: 1%;
+    margin: 6px;
+    border-radius: 8px;
+    width: 350px;
+    height: 70px;
+    font-size: x-large;
+    box-shadow: 3px 3px rgb(199, 199, 199);
+}
+
+.att{
+    margin: 5px;
+}
+
+.text-field {
+    height: 100px;
+}
+
+.fill-in {
+    text-align: left;
+    background: #fff;
+    padding: 2%;
+    margin: 6px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    width: 80%;
+}
+
+#organization{
+    text-align: left;
+    padding: 2%;
+    margin: 6px;
+    width: 80%;
+    font-weight: bold;
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: #EEEEEE;
+}
+
+.container {
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    justify-content: center;
+    text-align: center;
+    display: -moz-box;
+    width: 70%;
+    height: 60%;
+}
